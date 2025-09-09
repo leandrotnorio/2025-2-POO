@@ -5,11 +5,11 @@ public class Televisao
     private const int VOL_MAX = 100;
     private const int VOL_MIN = 0;
 
-    private const int ATIVAR_MUDO = 0;
+
 
     private int volumeAnterior;
 
-    private const bool TV_LIG = true;
+
     private const bool TV_DESLIG = false;
 
     public Televisao(float tamanho)
