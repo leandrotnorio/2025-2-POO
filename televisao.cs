@@ -5,6 +5,8 @@ public class Televisao
     private const int VOL_MAX = 100;
     private const int VOL_MIN = 0;
 
+    private int canalAnterior;
+
 
 
     private int volumeAnterior;
@@ -15,7 +17,7 @@ public class Televisao
     public Televisao(float tamanho)
     {
         Tamanho = tamanho;
-        Canal = CAN_MIN;
+        Canal = canalAnterior;
         Volume = VOL_MIN;
         volumeAnterior = Volume;
         Estado = TV_DESLIG;
@@ -66,6 +68,7 @@ public class Televisao
         if (!Estado)
         {
             Estado = true;
+            canalAnterior = Canal;
                 Console.WriteLine("TV ligada");
         }
         else
@@ -78,6 +81,7 @@ public class Televisao
     {
         if (Estado)
         {
+            canalAnterior = Canal;
             Estado = false;
             Console.WriteLine("TV desligada");
         }

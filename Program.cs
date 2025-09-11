@@ -51,9 +51,10 @@ tv.MudarParaCanal(700); // Canal inválido
 
 
 
-
-
 tv.DesligarTelevisao();
+
+tv.LigarTelevisao();
+Console.WriteLine($"Canal {tv.Canal}");
 
 
 
