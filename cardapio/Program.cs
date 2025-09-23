@@ -1,5 +1,4 @@
-﻿
-var todosDias = new Disponibilidade
+﻿var todosDias = new Disponibilidade
 {
     Dias = new List<int>
     {
